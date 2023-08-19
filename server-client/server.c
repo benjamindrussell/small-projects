@@ -21,7 +21,7 @@ int bindCreatedSocket(int hSocket) {
 	remote.sin_family = AF_INET;
 
 	// Any incoming interface
-	remote.sin_addr.s_addr = inet_addr("192.168.1.124"); 
+	remote.sin_addr.s_addr = inet_addr("127.0.0.1"); 
 	remote.sin_port = htons(clientPort); // local port
 	
 	iRetval = bind(hSocket, (struct sockaddr *) &remote, sizeof(remote));

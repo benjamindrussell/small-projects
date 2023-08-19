@@ -19,7 +19,7 @@ int socketConnect(int hSocket){
 	int serverPort = 12345;
 
 	struct sockaddr_in remote = {0};
-	remote.sin_addr.s_addr = inet_addr("192.168.1.124");
+	remote.sin_addr.s_addr = inet_addr("127.0.0.1");
 	remote.sin_family = AF_INET;
 	remote.sin_port = htons(serverPort);
 
