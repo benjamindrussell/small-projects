@@ -22,7 +22,6 @@ int main(void){
 	// char clientAddress1[50] = {0};
 	// char clientAddress2[50] = {0};
 
-
 	// Create socket
 	fdSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
